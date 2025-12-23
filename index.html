@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covalent Bond Interactive Lab</title>
+    <title>共价键交互实验室 - 探索微观世界</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes float {
@@ -15,11 +15,29 @@
         .animate-float {
             animation: float 3s ease-in-out infinite;
         }
+        /* 为部署后的应用添加平滑滚动和自定义滚动条 */
+        html {
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
     </style>
 <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
@@ -29,5 +47,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 overflow-x-hidden">
     <div id="root"></div>
+    <!-- 显式加载 React 应用入口 -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
