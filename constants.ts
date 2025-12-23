@@ -4,25 +4,25 @@ import { BondType, OrbitalInfo } from './types';
 export const ORBITAL_DATA: OrbitalInfo[] = [
   {
     id: BondType.SS_SIGMA,
-    title: "s-s σ (西格玛) 键",
+    title: "s-s σ 键",
     description: "由两个球形的s轨道沿键轴方向“头碰头”重叠形成。电子云密度在轴心处最集中，具有轴对称性。这种键强度较高，且允许原子绕轴自由旋转。",
     energyLevel: "低能级 / 最稳定"
   },
   {
     id: BondType.SP_SIGMA,
-    title: "s-p σ (西格玛) 键",
+    title: "s-p σ 键",
     description: "一个球形的s轨道与一个哑铃形的p轨道的一个叶瓣沿核间轴重叠。常见于卤化氢（如HCl）分子的形成过程中。",
     energyLevel: "中等能级"
   },
   {
     id: BondType.PP_SIGMA,
-    title: "p-p σ (西格玛) 键",
+    title: "p-p σ 键",
     description: "两个哑铃形的p轨道沿轴线方向“头碰头”重叠。电子云呈圆柱状对称，是构成单键的主要形式。",
     energyLevel: "稳定 σ 构型"
   },
   {
     id: BondType.PP_PI,
-    title: "p-p π (派) 键",
+    title: "p-p π 键",
     description: "两个平行的p轨道从侧面“肩并肩”重叠。电子云分布在核间轴的上下两侧，这种重叠方式限制了原子的自由旋转，且化学性质较活泼。",
     energyLevel: "高反应活性"
   },
